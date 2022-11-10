@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- CDN'S -->
+
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-P9FT69"></script>
+        <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+        <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
+        <script src="/cdn-cgi/apps/body/4o300efCt-CXoq1JEC-sVReFz48.js"></script>
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css"
+              href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CRoboto:400%7CRubik:100,400,700">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+              integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+              href="data:text/css;charset=utf-8;base64,Y2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gewogIGRpc3BsYXk6IGJsb2NrOwogIGJhY2tncm91bmQ6ICM0NTQ4NGQ7CiAgY29sb3I6ICNmZmY7CiAgbGluZS1oZWlnaHQ6IDEuNDU7CiAgcG9zaXRpb246IGZpeGVkOwogIHotaW5kZXg6IDkwMDAwMDAwOwogIHRvcDogMDsKICBsZWZ0OiAwOwogIHJpZ2h0OiAwOwogIHBhZGRpbmc6IC41ZW0gMWVtOwogIHRleHQtYWxpZ246IGNlbnRlcjsKICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOwogICAgIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgIC1tcy11c2VyLXNlbGVjdDogbm9uZTsKICAgICAgICAgIHVzZXItc2VsZWN0OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXVtkYXRhLXZpc2liaWxpdHk9ImhpZGRlbiJdIHsKICBkaXNwbGF5OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1tZXNzYWdlIHsKICBkaXNwbGF5OiBibG9jazsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gYSB7CiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7CiAgY29sb3I6ICNlYmViZjQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6aG92ZXIsCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6YWN0aXZlIHsKICBjb2xvcjogI2RiZGJlYjsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gY2xvdWRmbGFyZS1hcHAtY2xvc2UgewogIGRpc3BsYXk6IGJsb2NrOwogIGN1cnNvcjogcG9pbnRlcjsKICBmb250LXNpemU6IDEuNWVtOwogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICByaWdodDogLjRlbTsKICB0b3A6IC4zNWVtOwogIGhlaWdodDogMWVtOwogIHdpZHRoOiAxZW07CiAgbGluZS1oZWlnaHQ6IDE7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGNsb3VkZmxhcmUtYXBwLWNsb3NlOmFjdGl2ZSB7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTsKICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1jbG9zZTpob3ZlciB7CiAgb3BhY2l0eTogLjllbTsKICBjb2xvcjogI2ZmZjsKfQo=">
+    </head>
+</head>
+
+<body class="grid-block" style="background-image: url('./img/investigacion.jpg'); width: 100%; height: 100vh; background-repeat: no-repeat;background-size: cover; ">
+    <!-- Page Header-->
+    <header class="opacity-75 section page-header">
+        <!-- RD Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                      fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Home/conocenos.jsp">Conocenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="NuevoIngreso.php">Investigaciones</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="Home/contactanos.jsp">Contacto</a>
+                        </li>
+                    </ul>
+                    <a class="nav-link btn btn-success  px-2" aria-current="page"
+                       href="SuperAdministrador/login.jsp"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                             height="20">
+                        <path fill-rule="evenodd"
+                              d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                        <path fill-rule="evenodd"
+                              d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg> Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Swiper-->
+    <main>
+        <div class="container marketing ">
+            <div class="row featurette bg-white">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">
+                        Conócenos. <span class="text-muted">About us.</span>
+                    </h2>
+                    <p class="lead">
+                        Conoce un poco más sobre quienes somos, nuestra misión y visión.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <a href="conocenos.html">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto conoce"
+                             src="data:image/png;base64,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" width="400" height="400" role="img"
+                             aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"
+                             onmouseenter="conoce3(event)" onmouseout="conoce2(event)">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" />
+                        </img>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="featurette-divider" />
+
+            <div class="row featurette bg-white">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">
+                        Investigaciones. <span class="text-muted">El más alto nivel siempre.</span>
+                    </h2>
+                    <p class="lead">
+                        Buscamos innovar para ti. Nuestros equipos de trabajo son los más capacitados a nivel mundial
+                        para realizar trabajos de investigación, así como para capacitarte para tener un excelente nivel
+                        academico. ¿Qué esperas para unirte?
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <a href="noticias.html">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto menu"
+                             src="multimedia/img/noticias.png " width="500" height="500" role="img"
+                             aria-label="Placeholder: 400x400" preserveAspectRatio="xMidYMid slice" focusable="false"
+                             onmouseenter="menu1(event)" onmouseout="menu2(event)">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" />
+                        </img>
+                    </a>
+                </div>
+            </div>
+            <hr class="featurette-divider" />
+
+            <hr class="featurette-divider" />
+
+            <div class="row featurette bg-white">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">
+                        Contactanos. <span class="text-muted">Contact us.</span>
+                    </h2>
+                    <p class="lead">
+                        ¿Necesitas contactarnos? Puedes hacerlo aquí sin problemas.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <a href="contactanos.html">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto contacto"
+                             <img src="multimedia/img/contactanos.png" width="500" height="500" role="img"
+                             aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"
+                             onmouseenter="contacto2(event)" onmouseout="contacto1(event)" alt="">
+
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" />
+                        </img>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="featurette-divider" />
+        </div>
+    </main>
+
+</section>
+<section class="">
+
+</section>
+<section class="">
+
+</section>
+<!-- Page Footer-->
+<footer>
+
+</footer>
+</body>
+
+</html>
